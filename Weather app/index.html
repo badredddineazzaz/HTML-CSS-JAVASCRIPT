@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Weather | Project for Web2</title>
+  <link rel="icon" href="./icons/tab-icon.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="">My Weather</a>
+    <a href="https://github.com/badredddineazzaz" class="github"><i class="fab fa-github"></i></a>
+  </nav>
+
+
+  <div class="body-content">
+    <div class="left">
+      <h1 class="title">Do you need a sunscreen or an umbrella?</h1>
+
+      <div class="citySearch">
+        <input type="text" id="cityoutput" class="cityinput" placeholder="Search for a city" />
+        <button id="add" class="search" onclick=""><i class="fa fa-search"></i></button>
+      </div>
+
+      <div id="error-box">
+        <i class="fad fa-exclamation-triangle"></i>
+        <div class="error-text"></div>
+      </div>
+    </div>
+
+    <div class="right">
+
+
+      <div class="top-right">
+        <!-- icon -->
+        <img src="./3d weather icons/sun/6.png" alt="icon" class="icon" width="160px" height="130px" />
+        <!-- next to icon -->
+        <div class="tempCityState">
+          <!-- location -->
+          <div class="cityCountry">
+            <p class="cityname">El Jadida</p>
+          </div>
+          <!-- temperature -->
+          <div>
+            <p> <span class="temp">32</span>°C </p>
+          </div>
+          <!-- description -->
+          <div>
+            <p class="description">Sunny</p>
+          </div>
+        </div>
+
+        <div class="quoteArea">
+          <p class="quote"></p>
+        </div>
+      </div>
+
+
+      <div class="bottom-right">
+        <!-- humiddity -->
+        <div class="container">
+          <img src="./img/Humidity.svg" alt="">
+          <div class="text-content">
+            <p>Humidity</p>
+            <p class="state" id="humidity">66</p>
+          </div>
+        </div>
+
+        <!-- wind -->
+        <div class="container">
+          <img src="./img/wind.svg" alt="">
+          <div class="text-content">
+            <p>Wind</p>
+            <p class="state" id="wind">3.5</p>
+          </div>
+        </div>
+
+        <!-- sunrise -->
+        <div class="container">
+          <img src="./img/Sunrise.svg" alt="">
+          <div class="text-content">
+            <p>Sunrise</p>
+            <p class="state" id="sunrise">08:20</p>
+          </div>
+        </div>
+        <!-- sunset -->
+        <div class="container">
+          <img src="./img/Sunset.svg" alt="">
+          <div class="text-content">
+            <p>Sunset</p>
+            <p class="state" id="sunset">19:20</p>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <script src="./js/font-awesome.js"></script>
+  <script src="./js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>
